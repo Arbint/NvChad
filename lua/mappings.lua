@@ -8,3 +8,4 @@ local map = vim.keymap.set
 -- map("i", "jk", "<ESC>")
 
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", 'K', "<cmd>lua vim.lsp.buf.hover()<CR>")

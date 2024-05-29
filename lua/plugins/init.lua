@@ -24,6 +24,8 @@ return {
   			"html-lsp", "css-lsp" , "prettier",
         -- cpp lua-language-server 
         "clangd",
+        -- python LPS
+        "pyright",
   		},
   	},
   },
