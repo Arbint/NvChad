@@ -25,6 +25,8 @@ lspconfig.tsserver.setup {
 lspconfig.clangd.setup{
   on_attach = function(client, bufnr)
     client.server_capabilities.signatureHelpProvider = false
+    --switch header and cpp
+    vim.keymap.set("n", "ko", "<cmd>ClangdSwitchSourceHeader<cr>")
     on_attach(client, bufnr)
   end,
   capabilities = capabilities,
