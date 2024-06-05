@@ -4,7 +4,7 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "pyright"}
+local servers = { "html", "cssls", "pyright","dhall_lsp_server"}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -31,3 +31,10 @@ lspconfig.clangd.setup{
   end,
   capabilities = capabilities,
 }
+
+lspconfig.cmake.setup{
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+}
+

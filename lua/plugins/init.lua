@@ -26,6 +26,10 @@ return {
         "clangd",
         -- python LPS
         "pyright",
+        -- cmake lsp
+        "cmake-language-server",
+        -- docker
+        "dhall-lsp",
   		},
   	},
   },
@@ -35,7 +39,7 @@ return {
   	opts = {
   		ensure_installed = {
   			"vim", "lua", "vimdoc",
-       "html", "css", "cpp",
+       "html", "css", "cpp", "cmake", "dhall",
   		},
   	},
   },
