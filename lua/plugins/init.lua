@@ -43,4 +43,8 @@ return {
   		},
   	},
   },
+
+  {
+    "tpope/vim-dotenv",
+  },
 }
